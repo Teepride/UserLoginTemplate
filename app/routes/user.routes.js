@@ -17,10 +17,4 @@ module.exports = function(app) {
     [authJwt.verifyToken],
     controller.userInfo
   );
-
-  app.put(
-    "api/modifypassword",
-    [authJwt.verifyToken],
-    controller.modifyPassword
-  );
 };
